@@ -10,6 +10,7 @@
 body{
     position: relative;
     z-index: -10;
+    overflow-x: hidden;
 }
 
 .wrapper{
@@ -306,8 +307,13 @@ input[type="checkbox"]:checked::before{
 
 @media (max-width: 465px) {
     .container{
-        width: 95%;
-        height: 95%;
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -347,11 +353,5 @@ input[type="checkbox"]:checked::before{
     .generateButton{
         font-size: medium;
         padding: 15px 10px;
-    }
-    .image2{
-        scale: 0.4;
-        z-index: 2;
-        left: 9vw;
-        top: 400px;
     }
 }
